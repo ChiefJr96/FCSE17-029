@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Gabs Weather Forcast</title>
+
+		<!-- Form Javascrip -->
+
+		   <script type="text/javascript">
+                  function validate()
+                  {
+                      var vakid = false;
+                      var x = document.myform.feedback;
+
+                      for(var i=0;i<x.length;i++){
+                      	if(x[i].checked){
+                      		valid = true;
+                      		break;
+                      	}
+                      }    
+                      if(valid) {
+                      	alert("Okay");
+                      }               
+                      else{
+                      	alert("Please select gender");
+                      	return false;
+                      }    
+                  }
+        </script>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+		<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="pic.png" alt="" class="logo" width="100px">
+						<div class="logo-type" >
+							<h1 class="site-title">Gabs Weather Forcast</h1>
+							<small class="site-description"></small>
+						</div>
+					</a>
+
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="news.html">News</a></li>
+							<li class="menu-item"><a href="Lifestyle.html">Lifestyle</a></li>
+							<li class="menu-item"><a href="Events.html">Events</a></li>
+							<li class="menu-item"><a href="About Us.html">About Us</a></li>
+							<li class="menu-item current-menu-item"><a href="Feedback.html">Feedback</a></li>
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div> <!-- .site-header -->
+
+			<div class="hero" data-bg-image="images/contact.jpg">
+				<div class="container">
+
+
+			<main class="main-content">
+				<div class="container">
+					<div class="breadcrumb">
+						<a href="index.html">Home</a>
+						<span>Feedback</span>
+					</div>
+				</div>
+				
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-5">
+							<div class="contact-details">
+								<img style="height: 450px;
+											background: #262936;
+								 			border-radius: 10px;
+								 			overflow: hidden;
+								" src="GABS/Gabs.jpg" alt="">
+
+								<div class="contact-info">
+									<address>
+										<p>Gabs Weather Forcast<br>
+										P/Bag 1818, Ganborone</p>
+									</address>
+									
+									<a href="#"><img src="images/icon-phone.png" alt="">+267 74443231</a>
+									<a href="#"><img src="images/icon-envelope.png" alt="">kgosi@gabsweather.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-offset-1">
+							<h2 class="section-title">Contact us</h2>
+							<p style="font-weight: bold">Keep in touch with us</p>
+							<form action="#" class="contact-form">
+								<div class="row">
+									<div class="col-md-6"><input type="text" placeholder="Your name..." required></div>
+									<div class="col-md-6"><input type="text" placeholder="Email Addresss..." required></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6"><input type="text" placeholder="Company name..."></div>
+									<div class="col-md-6"><input type="text" placeholder="Website..."></div>
+								</div>
+								<textarea name="" placeholder="Message..."></textarea>
+								<div class="col-md-6">
+									<button class="btn-warning" type="submit">Submit</button>
+								</div>
+							</form>
+
+						</div>
+
+							<div class="content col-md-8">
+								<div class="post single">		
+								   <div class="box">
+								      <h1>Feedback Form</h1>
+								        <div class="input-box">
+								          <div class="box-content">
+								      <form action="index.html" name="feedback" onsubmit="return validate()">
+										          <label for="firstname"> First name: </label>  <br>
+										          <input type="text" id="firstname" name="firstname" required > <br>
+										              <label for="lname"> Last name: </label> <br>
+										              <input type="text" id="lastname" name="lastname" required > <br><br>
+										              <i class="fa fa-edit"></i>
+										          <label for="female"> Female </label>
+										          <input type="radio" id="female" required>
+										          <label for="male"> Male </label>
+										          <input type="radio" id="male" required ><br>
+										          <div class="col-md-6">
+									<button class="btn-warning" type="submit">Submit</button>
+								</div>
+								          </form>
+								        </div>
+       								 </div>
+
+       								<form action="#" class="contact-form">
+       									 <textarea name="" placeholder="Leave a comment..."></textarea>
+											<div class="text-right">
+												<input type="submit" placeholder="Send comment" required >
+											</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+
+							<div class="sidebar col-md-3 col-md-offset-1">
+								<div class="widget top-rated">
+									<h3 class="widget-title">ADVERTISEMENT</h3>
+									<ul>
+										<li><h3 class="entry-title">
+											  <a href="https://order.kfc.co.za/menu"> 
+								            	<h4>KFC</h4>
+								                 <img src="Adverts/KFC3Dikgosi.jpg"
+								                 		width="263px">
+								             </a></h3></li>
+
+										<li><h3 class="entry-title">
+											<a href="https://www.moetipracticum.ac.bw/index.php"> 
+						                        <h4>Moeti Practicum Institute</h4>                     
+						                          <img src="Adverts/MPI.png"
+						                          		width="263px"
+						                          		height="200px">                              
+						                        </a></h3></li>
+
+										<li><h3 class="entry-title">
+											 <a href="https://www.bac.ac.bw/">
+											 	<h4>BAC</h4>                        
+						                        <img src="Adverts/BAC.jpg"
+						                        	 width="263px"
+						                        	 height="200px">						                             
+						                        </a> </h3></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</main> <!-- .main-content -->
+
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter your email to subscribe to our newsfeed...">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div>
+						<div class="col-md-3 col-md-offset-1">
+							<div class="social-links">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#"><i class="fa fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<p class="colophon">Copyright 2021 Gabs Weather Forcast. Designed by Kgosi Junior Ntebele. All rights reserved</p>
+				</div>
+			</footer> <!-- .site-footer -->
+		</div>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
